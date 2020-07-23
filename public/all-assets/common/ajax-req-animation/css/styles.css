@@ -1,0 +1,22 @@
+
+.ajax-animation {
+    display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, .8 )
+                url('../img/FhHRx.gif')
+                50% 50%
+                no-repeat;
+
+
+}
+body.loading .ajax-animation {
+    overflow: hidden;
+}
+body.loading .ajax-animation {
+    display: block;
+}
