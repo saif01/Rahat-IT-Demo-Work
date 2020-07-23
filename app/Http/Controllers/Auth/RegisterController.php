@@ -76,7 +76,12 @@ class RegisterController extends Controller
 
     public function showRegistrationForm()
     {
-        return view('auth.register');
+        //return view('auth.register');
+
+        if(Auth::user()){
+            return route('/home');
+        }
+        return view('login');
     }
 
 
