@@ -8,13 +8,25 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <!--=== Favicon ===-->
     @include('admin.layouts.icon')
-    <title>Rahat IT Solutions</title>
+    <title>Rahat IT Solution</title>
     <link href="https://fonts.googleapis.com/css2?family=El+Messiri&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('all-assets/common/bootstrap-4.5/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('all-assets/common/fontawesom5.7/css/all.min.css') }}" >
     <link rel="stylesheet" href="{{ asset('all-assets/user/login/assets/css/style.min.css') }}">
 
     <link rel="stylesheet" href="{{ asset('all-assets/common/ajax-req-animation/css/styles.css') }}" >
+
+    <style>
+        .rotate {
+            -webkit-transition: -webkit-transform .5s ease-in-out;
+            transition: transform .5s ease-in-out;
+        }
+        .rotate:hover {
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+
+    </style>
 
     {{-- Preloader --}}
     <style>
@@ -40,8 +52,8 @@
                 <div class="card gradient-bg">
 
                     <div class="card-header text-center">
-                        <img src="{{ asset('all-assets/common/logo/logo/rahat-it.png') }}" class="logo">
-                        <h4 class="text-light">Rahat IT Solutions Admin</h4>
+                        <img src="{{ asset('all-assets/common/logo/logo/rahat-it.png') }}" class="logo rotate">
+                        <h4 class="text-light">Rahat IT Solution Admin</h4>
                     </div>
 
                     <div class="card-body">
